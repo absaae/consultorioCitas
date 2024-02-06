@@ -16,4 +16,4 @@ En este podemos encontrar el menú para el inicio de sesión, es decir, las opci
 Encontramos la base de datos del calendario y los métodos para poder editarla[p: crear cita, cambiar cita y eliminar cita. Así como uno aparte en donde se pueden consultar las citas que tenemos. 
 
 ### pantallaPrincipal
-En este se encuentra el menu para poder interactuar con las citas. Y próximante con el de mensajes. 
+En este se encuentra el menu para poder interactuar con las citas, el historial clinico y los metodos de pago.

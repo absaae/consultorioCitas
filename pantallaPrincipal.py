@@ -160,8 +160,35 @@ def  view_medical_history():
     return_to_main_menu()
 
 def menu_payment():
-    # Funcionalidad aún no implementada
-    print("\nMenú de tipos de pago - Funcionalidad no implementada")
+    print("\nMenú de tipos de pago")
+    print("1. Pago en efectivo")
+    print("2. Pago con aseguradora")
+
+    opcion = input("\nIngrese el número de opción: ")
+
+    if opcion == '1':
+        cash_payment()
+    elif opcion == '2':
+        insurance_payment()
+    else:
+        print("\nOpción no válida. Volviendo al menú principal.")
+
+def cash_payment():
+    total_amount = 500  # Monto total al azar, puedes cambiarlo según tus necesidades
+    print(f"\nPago en efectivo - Total a pagar: ${total_amount}")
+    # Desglose del pago, si es necesario, se puede implementar aquí
+    return_to_main_menu()
+
+def insurance_payment():
+    accepted_insurers = ["Dentegra", "Seguros Atlas", "Ammia"]
+    insurer = input("\nIngrese el nombre de la aseguradora: ")
+
+    if insurer in accepted_insurers:
+        print("\nPago con aseguradora aprobado.")
+    else:
+        print("\nError: Aseguradora no aceptada. Solo se aceptan: Dentegra, Seguros Atlas, Ammia.")
+
+    return_to_main_menu()
 
 if __name__ == "__main__":
     home_screen()
